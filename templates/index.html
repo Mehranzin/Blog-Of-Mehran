@@ -87,7 +87,7 @@
       }
 
       function apagarPost(index) {
-        if (confirm("Você tem certeza que deseja X?")) {
+        if (confirm("Tem certeza que deseja DELETAR o post?")) {
           fetch(`/posts/${index}`, { method: "DELETE" }).then(() =>
             carregarPosts()
           );
